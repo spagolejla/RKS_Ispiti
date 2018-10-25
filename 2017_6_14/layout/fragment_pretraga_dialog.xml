@@ -1,0 +1,102 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.lalalas.hci_ispit_2017_6_14.fragments.PretragaDialogFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:id="@+id/TextViewPretragaKorisnika"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pretraga korisnika"
+        android:background="@color/blue"
+        android:textAlignment="center"
+        android:textSize="19dp"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="10dp"
+        />
+
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:inputType="textNoSuggestions|textVisiblePassword"
+        android:queryHint="Ime"
+        android:text=""
+
+        >
+
+    </SearchView>
+
+        <ListView
+            android:layout_below="@+id/searchView"
+
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+
+            ></ListView>
+
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/scrollView">
+
+        <TextView
+            android:id="@+id/TextViewNoviKorisnik"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/blue"
+            android:text="Novi korisnik"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="19dp" />
+
+        <EditText
+            android:id="@+id/txtIme"
+            android:layout_width="178dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/TextViewNoviKorisnik"
+            android:layout_marginTop="10dp"
+            android:hint="Ime" />
+
+        <EditText
+            android:id="@+id/txtPrezime"
+            android:layout_width="202dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/TextViewNoviKorisnik"
+
+
+            android:layout_marginTop="10dp"
+
+            android:hint="Prezime" />
+
+        <EditText
+            android:id="@+id/txtAdresa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtIme"
+            android:hint="Adresa i Opstina" />
+
+        <Button
+            android:id="@+id/btnSnimiKorisnika"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtAdresa"
+            android:background="@color/blue"
+            android:text="Snimi" />
+
+    </RelativeLayout>
+
+</LinearLayout>

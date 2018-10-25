@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.Fragment1">
+
+
+
+    <TextView
+        android:id="@+id/TextViewPosiljaoc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        android:textColor="@android:color/holo_blue_light"
+        android:text="Posiljaoc"
+        />
+
+    <EditText
+        android:id="@+id/txtImePosiljaoca"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:layout_below="@+id/TextViewPosiljaoc"
+        android:hint="Ime "
+        android:textAlignment="center"
+        />
+
+    <EditText
+        android:id="@+id/txtPrezimePosiljaoca"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:layout_below="@+id/txtImePosiljaoca"
+        android:hint="Prezime"
+        android:textAlignment="center"
+        />
+
+    <EditText
+        android:id="@+id/txtAdresaPosiljaoca"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:layout_below="@+id/txtPrezimePosiljaoca"
+        android:hint="Adresa"
+        android:textAlignment="center"
+        />
+
+    <Button
+        android:id="@+id/btnPromjeniPosiljoaca"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtAdresaPosiljaoca"
+        android:background="@android:color/holo_blue_light"
+        android:text="Promjeni posiljaoca"
+        />
+
+    <Button
+        android:id="@+id/btnDalje"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnPromjeniPosiljoaca"
+        android:background="@android:color/holo_orange_light"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:text="Dalje"
+        />
+
+    <Button
+        android:id="@+id/btnOdustani"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnPromjeniPosiljoaca"
+        android:background="@android:color/holo_orange_light"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="20dp"
+        android:text="Odustani"
+        />
+</RelativeLayout>

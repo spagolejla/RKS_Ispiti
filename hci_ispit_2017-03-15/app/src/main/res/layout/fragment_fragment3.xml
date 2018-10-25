@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.Fragment1"
+    android:padding="16dp"
+    >
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/textPodaciOPaketu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Podaci o paketu"
+        android:textColor="@color/blue"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        />
+
+    <EditText
+        android:id="@+id/txtMasa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textPodaciOPaketu"
+        android:hint="Masa(kg)"
+        android:text=""
+        android:textAlignment="center"
+        />
+
+    <EditText
+        android:id="@+id/txtNapomena"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/txtMasa"
+        android:hint="Napomena"
+        android:text=""
+
+        />
+
+
+
+    <Button
+        android:id="@+id/btnZavrsi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtNapomena"
+        android:text="Zavrsi"
+        android:layout_alignParentRight="true"
+        android:background="@color/orange"
+        android:layout_marginTop="30dp"
+        />
+    <Button
+        android:id="@+id/btnNazad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtNapomena"
+        android:text="Nazad"
+        android:layout_alignParentLeft="true"
+        android:background="@color/orange"
+        android:layout_marginTop="30dp"
+        />
+</RelativeLayout>

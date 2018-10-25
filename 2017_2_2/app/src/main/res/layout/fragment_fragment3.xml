@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.Fragment3">
+
+
+
+    <TextView
+        android:id="@+id/TextViewPrimaoc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        android:textColor="@android:color/holo_blue_light"
+        android:text="Podaci o paketu"
+        />
+
+    <EditText
+        android:id="@+id/txtMasa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TextViewPrimaoc"
+        android:hint="Masa(kg) "
+        android:textAlignment="center"
+        android:inputType="numberDecimal"
+        />
+
+    <EditText
+        android:id="@+id/txtDuzina"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txtMasa"
+        android:layout_marginStart="18dp"
+        android:hint="D(cm)"
+        android:textAlignment="center"
+        android:inputType="numberDecimal"
+        />
+
+    <TextView
+        android:id="@+id/X1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtDuzina"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="112dp"
+        android:text="X" />
+
+    <EditText
+        android:id="@+id/txtSirina"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txtMasa"
+        android:layout_marginStart="147dp"
+        android:inputType="numberDecimal"
+
+        android:hint="Š(cm)"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/X2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtDuzina"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="106dp"
+        android:text="X" />
+
+    <EditText
+        android:id="@+id/txtVisina"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/txtMasa"
+        android:layout_marginEnd="20dp"
+        android:inputType="numberDecimal"
+
+        android:hint="V(cm)"
+        android:textAlignment="center" />
+    <EditText
+        android:id="@+id/txtNapomena"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+
+        android:layout_below="@+id/txtDuzina"
+        android:hint="Napomena"
+        android:textAlignment="center"
+
+
+        />
+
+    <Button
+        android:id="@+id/btnZavrsi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtNapomena"
+        android:background="@android:color/holo_orange_light"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:text="Zavrsi"
+        android:padding="10dp"
+        />
+
+    <Button
+        android:id="@+id/btnNazad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtNapomena"
+        android:background="@android:color/holo_orange_light"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="20dp"
+        android:text="Nazad"
+        android:padding="10dp"
+        />
+</RelativeLayout>

@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lalalas.hci_ispit_2017_6_14.fragments.Fragment2">
+
+
+    <TextView
+        android:id="@+id/PodaciOPaketu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Podaci o paketu"
+        android:textAlignment="center"
+        android:textColor="@color/blue"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:id="@+id/txtMasa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/PodaciOPaketu"
+        android:textAlignment="center"
+        android:hint="Masa"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="10dp"
+        />
+
+    <EditText
+        android:id="@+id/txtNapomena"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/txtMasa"
+        android:layout_marginTop="10dp"
+
+
+        android:hint="Napomena" />
+
+    <Switch
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="78dp"
+        android:layout_below="@+id/txtNapomena"
+        android:layout_marginBottom="247dp"
+        android:layout_marginTop="10dp"
+        android:text="Plati pouzecem"
+
+        />
+
+
+    <EditText
+        android:id="@+id/txtIznos"
+        android:layout_width="157dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/txtNapomena"
+        android:layout_marginLeft="99dp"
+        android:layout_toRightOf="@+id/checkBox"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="Iznos(KM)"
+        android:layout_marginTop="10dp"
+
+        />
+
+    <Button
+        android:id="@+id/btnZavrsi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtIznos"
+        android:layout_marginTop="50dp"
+        android:text="Zavrsi"
+        android:background="@color/orange"
+        android:layout_alignParentRight="true"
+
+        />
+
+    <Button
+        android:id="@+id/btnNazad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtIznos"
+        android:layout_marginTop="50dp"
+        android:text="Nazad"
+        android:background="@color/orange"
+        android:layout_alignParentLeft="true"
+
+        />
+</RelativeLayout>

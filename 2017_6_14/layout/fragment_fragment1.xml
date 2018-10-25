@@ -1,0 +1,96 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lalalas.hci_ispit_2017_6_14.fragments.Fragment1">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/TextViewPrimaoc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Primaoc"
+        android:textAlignment="center"
+        android:textColor="@color/blue"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        />
+    <EditText
+        android:id="@+id/txtPrimaoc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:layout_below="@+id/TextViewPrimaoc"
+        android:textAlignment="center"
+        android:hint="Ime primaoca"
+        />
+    <EditText
+        android:id="@+id/txtAdresaPrimaoca"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:layout_below="@+id/txtPrimaoc"
+        android:textAlignment="center"
+        android:hint="Adresa primaoca"
+        />
+    <Button
+        android:id="@+id/btnPromjeniPrimaoca"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtAdresaPrimaoca"
+        android:text="Promjeni primaoca"
+        android:background="@color/blue"
+        />
+
+    <TextView
+        android:id="@+id/TextViewPosiljaoc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Posiljaoc"
+        android:textAlignment="center"
+        android:textColor="@color/blue"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/btnPromjeniPrimaoca"
+        />
+    <EditText
+        android:id="@+id/txtPosiljaoc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:layout_below="@+id/TextViewPosiljaoc"
+        android:textAlignment="center"
+        android:hint="Ime posiljaoca"
+        />
+    <EditText
+        android:id="@+id/txtAdresaPosiljaoca"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:layout_below="@+id/txtPosiljaoc"
+        android:textAlignment="center"
+        android:hint="Adresa posiljaoca"
+        />
+    <Button
+        android:id="@+id/btnPromjeniPosiljaoca"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtAdresaPosiljaoca"
+        android:text="Promjeni posiljaoca"
+        android:background="@color/blue"
+
+        />
+
+    <Button
+        android:id="@+id/btnDalje"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnPromjeniPosiljaoca"
+        android:layout_marginTop="50dp"
+        android:text="Dalje"
+        android:background="@color/orange"
+        android:layout_alignParentRight="true"
+
+        />
+</RelativeLayout>
